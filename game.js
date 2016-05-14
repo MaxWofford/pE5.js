@@ -144,7 +144,7 @@ function draw() {
   }
   
   if (endGame == true) {
-    player.scale += 0.1
+    player.scale += 0.025;
   }
 
   setGradient(0, 0, window.innerWidth/2, window.innerHeight/2, color(127,127,255), color(76,76,255), 15);
@@ -152,11 +152,11 @@ function draw() {
  }
 
 function gameWin() {
-  document.querySelector('#danger').innerHTML = "<iframe display='none' height='0' width='0' src='//www.youtube.com/embed/siwpn14IE7E?t=59s&autoplay=1&loop=1&playlist=GRonxog5mbw' frameborder='0'></iframe>"
+  document.querySelector('#danger').innerHTML = "<iframe display='none' height='0' width='0' src='//www.youtube.com/embed/siwpn14IE7E?start=59s&autoplay=1&loop=1&playlist=GRonxog5mbw' frameborder='0'></iframe>"
   alert('You won!');
   setTimeout(function() {
     window.location.href = 'https://maur927.github.io/e_name/';
-  }, 7000)
+  }, 9000)
 }
 
 function gameOver() {
